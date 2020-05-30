@@ -27,7 +27,7 @@ public class Pruebas {
 			inventario.limpiar();
 			for (int t = 0; t < tamObjetos.length; t++) 
 				listaObjetos.add(new Objeto(t,tamObjetos[t][0],tamObjetos[t][1],valor[v][t]));	
-			ArrayList<Objeto> solucion = PrincipalSoluc.llenarInventario(listaObjetos, inventario);
+			ArrayList<Objeto> solucion = Principal.llenarInventario(listaObjetos, inventario);
 
 			System.out.println("PRUEBA " + (v+1));
 			if (solucion != null) 

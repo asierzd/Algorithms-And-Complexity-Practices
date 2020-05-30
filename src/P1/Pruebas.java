@@ -1,6 +1,6 @@
-﻿package P1;
+package P1;
 
-public class Prueba {
+public class Pruebas {
     private static int[][] vectores = {
             {-1 ,0, 2, 3, 10, 12, -23, -14, -7},
             {-3, 1, 2, -4},
