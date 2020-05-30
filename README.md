@@ -1,5 +1,5 @@
 # Algorithms-And-Complexity-Practices
-These are my solutions to the practices of Algorithms and complexity subject.
+These are my solutions to the practices of Algorithms and complexity subject written in Java.
 
 P0: Sorting algorithms and their complexity.
 P1: Divide and conquer.
