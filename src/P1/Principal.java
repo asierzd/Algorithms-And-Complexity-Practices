@@ -16,7 +16,7 @@ public class Principal {
          }
     }
 
-    public static int sumaPositivos2(int[] vector){
+    public static int sumaPositivos2(int[] vector){ // O(logN) worst case
         int pos=buscarMaximo(vector,0,vector.length-1);
         int suma=0, max=vector[pos], i=pos;
         boolean fin=false;
