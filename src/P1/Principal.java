@@ -1,13 +1,18 @@
 package P1;
 
 public class Principal {
-     public static int sumaPositivos1(int[] vector){ // O(n) worst case
+
+    // First implementation
+    public static int sumaPositivos1(int[] vector){ // O(n) worst case
         return sumaPositivos1Aux(vector,0,vector.length-1);
     }
 
     public static int sumaPositivos1Aux(int[] v, int i0, int iN){
          if (i0==iN){
-             if (v[i0]>0) return v[i0]; else return 0;
+            if (v[i0]>0)
+                return v[i0]; 
+            else 
+                return 0;
          }else{
              int m=(i0+iN)/2;
              int iz=sumaPositivos1Aux(v,i0,m);
@@ -16,6 +21,7 @@ public class Principal {
          }
     }
 
+    // Second implementation
     public static int sumaPositivos2(int[] vector){ // O(logN) worst case
         int pos=buscarMaximo(vector,0,vector.length-1);
         int suma=0, max=vector[pos], i=pos;
@@ -35,6 +41,8 @@ public class Principal {
         return suma;
     }
 
+
+    // Search maximum number
     public static int buscarMaximo(int[] v, int i0, int iN){
 
         if (i0==iN){

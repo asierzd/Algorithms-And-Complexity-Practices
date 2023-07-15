@@ -48,6 +48,14 @@ public class Ordenacion {
 
 		// INCLUIR EL CODIGO DEL ALGORITMO DE ORDENACION POR SELECCION
 
+		for (int i=0; i<datos.length; i++) {
+			int k = i; 
+			for (int j=i+1; j<datos.length; j++) {
+				if (datos[j] < datos[k]) k=j; 
+			}
+			int aux=datos[i]; datos[i]=datos[k]; datos[k]=aux;
+		}			
+
 		t2 = System.nanoTime();
 		return (t2-t1);
 	}
@@ -62,6 +70,13 @@ public class Ordenacion {
 		t1 = System.nanoTime();
 
 		// INCLUIR EL CODIGO DEL ALGORITMO DE ORDENACION POR BURBUJA
+
+		for (int j=datos.length-1; j>=0; j--) 
+			for (int i=0; i<j; i++) {
+				if (datos[i]>datos[i+1]) {
+				int aux=datos[i]; datos[i]=datos[i+1]; datos[i+1]=aux;
+			}
+		}
 
 		t2 = System.nanoTime();
 		return (t2-t1);
@@ -80,6 +95,19 @@ public class Ordenacion {
 
 		// INCLUIR EL CODIGO DEL ALGORITMO DE ORDENACION POR BURBUJA OPTIMIZADO
 
+		boolean ordenado=false; 
+		int j=datos.length-1; 
+		while (!ordenado) {
+			ordenado=true;
+			for (int i=0; i<j; i++) {
+				if (datos[i]>datos[i+1]) {
+					int aux=datos[i]; datos[i]=datos[i+1]; datos[i+1]=aux;
+					ordenado=false;
+				}
+			}
+			j--;
+		}
+
 		t2 = System.nanoTime();
 		return (t2-t1);
 	}
@@ -95,6 +123,24 @@ public class Ordenacion {
 		t1 = System.nanoTime();
 
 		// INCLUIR EL CODIGO DEL ALGORITMO DE ORDENACION POR COMBSORT
+
+		boolean ordenado=false; 
+		int gap=datos.length-1;
+		if (datos[0]>datos[gap]) {
+			int aux=datos[0]; datos[0]=datos[gap]; datos[gap]=aux;
+		}
+		while (!ordenado || gap>1) {
+			if (gap>1) gap=(int) Math.floor(gap/1.3);
+			ordenado=true; 
+			int i=0;
+			while (i+gap < datos.length) {
+				if (datos[i]>datos[i+gap]) {
+					int aux=datos[i]; datos[i]=datos[i+gap]; datos[i+gap]=aux;
+					ordenado=false;
+				}
+				i++;
+			} 
+		}
 
 		t2 = System.nanoTime();
 		return (t2-t1);

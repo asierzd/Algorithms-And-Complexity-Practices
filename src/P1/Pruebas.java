@@ -46,7 +46,7 @@ public class Pruebas {
             }
         }
         if (exito)
-            System.out.println("HAN TENIDO ÉXITO TODOS LOS TESTS. DISEÑA NUEVOS TESTS Y ASEGÚRATE QUE FUNCIONA TU ALGORITMO CORRECTAMENTE");
+            System.out.println("HAN TENIDO ÉXITO TODOS LOS TESTS. DISEÑA NUEVOS TESTS Y ASEGURATE QUE FUNCIONA TU ALGORITMO CORRECTAMENTE");
     }
 
     private static int sumaPositivosDyV(int apartado, int[] vector){
