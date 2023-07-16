@@ -15,7 +15,7 @@ These are my solutions to the practices of Algorithms and complexity subject wri
 
     In the following example, the minimum number of mutations in order to transform the string s1 into string s2 is 3:
 
-    ![BacktrackingExample](imgs/BacktrackingExample.png) 
+    ![BacktrackingExample](https://github.com/asierzd/Algorithms-And-Complexity-Practices/blob/master/imgs/BacktrackingExample.png) 
 
 - **P3 Greedy:** Greedy algorithm for candidate selection and feasible solutions.
 
@@ -23,7 +23,7 @@ These are my solutions to the practices of Algorithms and complexity subject wri
 
     For example, if we first have in our inventory an object with id 0 with dimensions 3x2, an object with id 5 (1x2) and an object with id 7 (2x2) (first image), and we add an object with id 1 (1x3) (second image), and finally add an object with id 2 (3x2), we obtain a final inventory as shown in the last image:
 
-    ![GreedyExample](imgs/GreedyExample.png)
+    ![GreedyExample](https://github.com/asierzd/Algorithms-And-Complexity-Practices/blob/master/imgs/GreedyExample.png)
 
 - **P4 Dynamic Programming:** Dynamic programming problem, text processor.
 
