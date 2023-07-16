@@ -1,5 +1,5 @@
 # Algorithms-And-Complexity-Practices
-These are my solutions to the practices of Algorithms and complexity subject written in Java.
+These are my solutions to the practices of Algorithms and complexity subject written in Java. Each practice has a set of tests of correctness of the developed solutions and the teachers also took into account the execution time for each practice for the final grade (the optimization of our solutions).
 
 ## Index
 - **P0 Sorting Algorithms:** Sorting algorithms and their complexity, comparison in execution time.
