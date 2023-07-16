@@ -7,7 +7,7 @@ These are my solutions to the practices of Algorithms and complexity subject wri
 
     The goal of this practice is to perform the sum of all of the positive elements of a circularly sorted vector. For the first part it has to be developed with a worst case algorithmic complexity of O(N), and for the second part, it has to be developed with a worst case complexity of O(LogN).
 
-    A circularly sorted vector is defined as follows: $ \quad v[N-1]$ $\leq v[0] \quad \land \quad \exists k \quad with \quad 0 < k < N \quad \mid \quad \forall i \neq k \quad v[i] \leq v[i+1]$
+    A circularly sorted vector is defined as follows: $ \quad v[N-1] \leq v[0] \quad \land \quad \exists k \quad with \quad 0 < k < N \quad \mid \quad \forall i \neq k \quad v[i] \leq v[i+1]$
 
 - **P2 Backtracking:** Backtracking and Branch and Bound for problem optimization.
 
