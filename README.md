@@ -1,6 +1,11 @@
 # Algorithms-And-Complexity-Practices
 These are my solutions to the practices of Algorithms and complexity subject written in Java. Each practice has a set of tests of correctness of the developed solutions and the teachers also took into account the execution time for each practice for the final grade (the optimization of our solutions).
 
+<p align="center">
+  <img src="https://img.shields.io/github/license/asierzd/Algorithms-And-Complexity-Practices?label=License&style=for-the-badge&color=yellow" href="https://opensource.org/license/gpl-3-0/"/>
+  <img src="https://img.shields.io/github/languages/top/asierzd/Algorithms-And-Complexity-Practices?style=for-the-badge&color=green"/>
+</p>
+
 ## Index
 - **P0 Sorting Algorithms:** Sorting algorithms and their complexity, comparison in execution time.
 - **P1 Divide and Conquer:** Divide and conquer based problem solution.
