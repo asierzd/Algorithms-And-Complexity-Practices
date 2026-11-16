@@ -33,7 +33,20 @@ $\quad \mid \quad \forall i \neq k \quad v[i] \leq v[i+1]$
 
 - **P4 Dynamic Programming:** Dynamic programming problem, text processor.
 
-    `// TODO`
+    In a text processor there is a number of N digits (numbered from 0 to N-1) written, and the cursor is at position $k \in \lbrace 0, 1, \dots, N \rbrace$, just before the digit k (if $k = N$ the cursor is at the end of the number). The available keys are: left arrow (moves the cursor one position to the left), right arrow (moves it one position to the right), Supr (deletes the digit immediately to the right of the cursor) and the digits 0 to 9 (insert a digit immediately to the left of the cursor). The goal is to find the minimum number of key presses needed to transform the written number into a palindrome. It has to be developed with a complexity of at most $O(N^2)$ in time and $O(N)$ in memory.
+
+    For example, the minimum number of key presses to turn `1 3 | 4 5 6 7 5 4 3 2 1` into a palindrome is 6:
+
+    ```
+    <-      : 1 | 3 4 5 6 7 5 4 3 2 1
+    2       : 1 2 | 3 4 5 6 7 5 4 3 2 1
+    ->      : 1 2 3 | 4 5 6 7 5 4 3 2 1
+    ->      : 1 2 3 4 | 5 6 7 5 4 3 2 1
+    ->      : 1 2 3 4 5 | 6 7 5 4 3 2 1
+    Supr    : 1 2 3 4 5 | 7 5 4 3 2 1
+    ```
+
+    The cursor sweeps a window $[L, R]$ that contains k, either going left first and then right, or right first and then left. Each tour gives every kept, deleted or inserted digit a fixed cost. The palindrome is then built from the outside in, like the classic minimum edits to palindrome problem, keeping as state whether each end is inside the window. Only two rows of the table are kept, which gives $O(N^2)$ time and $O(N)$ memory.
 
 ## License
 [GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.html)
